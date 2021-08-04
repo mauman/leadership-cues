@@ -45,8 +45,7 @@ lowpassfilter = FIRfilter(100, 0.01, 100)
 
 outputfile = CSVFileWriter("touch-output.csv", ",", "\"")
 
-# segmentsfile = CSVFileReader("D:/lea_short_august2016/3rd time/new500all.csv", " ")
-segmentsfile = CSVFileReader("D:/lea_short_august2016/3rd time/new250all.csv", " ")
+segmentsfile = CSVFileReader("sample-data/segments.csv", " ")
 windowlength = 250
 
 
@@ -69,7 +68,7 @@ while segment != []:
 
     trialNum = int(segment[2])
     if trialNum != prev_trialNum:
-        trialFileName = "D:/lea_short_august2016/trial_%03i.tsv" % trialNum
+        trialFileName = "sample-data/trial_%03i.tsv" % trialNum
         qtmfile = QTMTSVFileReader(trialFileName)
         prev_trialNum = trialNum
     secondColumn = segment[1]
