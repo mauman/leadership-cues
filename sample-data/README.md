@@ -1,5 +1,5 @@
 This folder contains some sample data on which the provided scripts can be tested.
-Data is taken from a larger dataset of unstructured dance movements described in the paper>
+Data is taken from a larger dataset of unstructured dance movements described in the paper:
 
 R. Niewiadomski, L. Chauvigne, M. Mancini, A. Camurri
 Towards a Model of Nonverbal Leadership in Unstructured Joint Physical Activity
